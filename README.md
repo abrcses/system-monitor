@@ -1,55 +1,41 @@
-# README Template
+# CppND-System-Monitor
 
-Below is a template provided for use when building your README file for students.
+Starter code for System Monitor Project in the Object Oriented Programming Course of the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213). 
 
-# Project Title
+Follow along with the classroom lesson to complete the project!
 
-Project description goes here.
+![System Monitor](images/monitor.png)
 
-## Getting Started
+## Udacity Linux Workspace
+[Udacity](https://www.udacity.com/) provides a browser-based Linux [Workspace](https://engineering.udacity.com/creating-a-gpu-enhanced-virtual-desktop-for-udacity-497bdd91a505) for students. 
 
-Instructions for how to get a copy of the project running on your local machine.
+You are welcome to develop this project on your local machine, and you are not required to use the Udacity Workspace. However, the Workspace provides a convenient and consistent Linux development environment we encourage you to try.
 
-### Dependencies
+## ncurses
+[ncurses](https://www.gnu.org/software/ncurses/) is a library that facilitates text-based graphical output in the terminal. This project relies on ncurses for display output.
 
-```
-Examples here
-```
+Within the Udacity Workspace, `.student_bashrc` automatically installs ncurses every time you launch the Workspace.
 
-### Installation
+If you are not using the Workspace, install ncurses within your own Linux environment: `sudo apt install libncurses5-dev libncursesw5-dev`
 
-Step by step explanation of how to get a dev environment running.
+## Make
+This project uses [Make](https://www.gnu.org/software/make/). The Makefile has four targets:
+* `build` compiles the source code and generates an executable
+* `format` applies [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) to style the source code
+* `debug` compiles the source code and generates an executable, including debugging symbols
+* `clean` deletes the `build/` directory, including all of the build artifacts
 
-List out the steps
+## Instructions
 
-```
-Give an example here
-```
+1. Clone the project repository: `git clone https://github.com/udacity/CppND-System-Monitor-Project-Updated.git`
 
-## Testing
+2. Build the project: `make build`
 
-Explain the steps needed to run any automated tests
+3. Run the resulting executable: `./build/monitor`
+![Starting System Monitor](images/starting_monitor.png)
 
-### Break Down Tests
+4. Follow along with the lesson.
 
-Explain what each test does and why
+5. Implement the `System`, `Process`, and `Processor` classes, as well as functions within the `LinuxParser` namespace.
 
-```
-Examples here
-```
-
-## Project Instructions
-
-This section should contain all the student deliverables for this project.
-
-## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
-
-## License
-
-[License](LICENSE.txt)
+6. Submit!
