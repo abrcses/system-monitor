@@ -1,10 +1,10 @@
 # CppND-System-Monitor
 
-Starter code for System Monitor Project in the Object Oriented Programming Course of the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213). 
+Starter code for System Monitor Project in the Object Oriented Programming Course of the Udacity C++ Nanodegree Program. 
 
 Follow along with the classroom lesson to complete the project!
 
-![System Monitor](images/monitor.png)
+![System Monitor](starter/images/monitor.png)
 
 ## Udacity Linux Workspace
 [Udacity](https://www.udacity.com/) provides a browser-based Linux [Workspace](https://engineering.udacity.com/creating-a-gpu-enhanced-virtual-desktop-for-udacity-497bdd91a505) for students. 
@@ -32,7 +32,7 @@ This project uses [Make](https://www.gnu.org/software/make/). The Makefile has f
 2. Build the project: `make build`
 
 3. Run the resulting executable: `./build/monitor`
-![Starting System Monitor](images/starting_monitor.png)
+![Starting System Monitor](starter/images/starting_monitor.png)
 
 4. Follow along with the lesson.
 
