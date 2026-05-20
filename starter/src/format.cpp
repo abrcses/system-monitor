@@ -16,6 +16,8 @@ string Format::ElapsedTime(long seconds) {
     int mins = seconds / 60;
     seconds = seconds - mins * 60;
     std::ostringstream oss;
-    oss << std::setfill('0') << std::setw(2) << hours << ":" << mins << ":" << seconds;
+    oss << std::setfill('0') << std::setw(2) << hours;
+    oss << ":" << std::setfill('0') << std::setw(2) << mins;
+    oss << ":" << std::setfill('0') << std::setw(2) << seconds;
     return oss.str();
 }
