@@ -20,7 +20,7 @@ class Process {
   std::string User();                      // TODO: See src/process.cpp
   std::string Command();                   // TODO: See src/process.cpp
   void CalcCpuUtilization();
-  float CpuUtilization();                  // TODO: See src/process.cpp
+  std::string CpuUtilization();                  // TODO: See src/process.cpp
   void CalcRam();
   std::string Ram();                       // TODO: See src/process.cpp
   long int UpTime();                       // TODO: See src/process.cpp

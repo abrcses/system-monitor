@@ -37,8 +37,10 @@ void Process::CalcCpuUtilization() {
 }
 
 // TODO: Return this process's CPU utilization
-float Process::CpuUtilization() {
-    return cpu_util_last;
+string Process::CpuUtilization() {
+    std::stringstream sstream;
+    sstream << std::fixed << std::setprecision(1) << cpu_util_last * 100;
+    return sstream.str();
 }
 
 // TODO: Return the command that generated this process
